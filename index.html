@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap Login Form</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+        <div class="col-xs-12" id="service-selection">
+            <h3 class="text-center">Wecome to KLK Service</h3>
+            <div class="well" style="height: auto;overflow: auto;">
+                <div class="bs-example">
+                  <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                              <h4 class="panel-title">
+                                  <a href="javascript:;">Plumbing and Sanitary</a>
+                              </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <ul id="category-list-box" data-id="0" class="list-group checked-list-box">
+                                    <li class="list-group-item">New House Connection</li>
+                                    <li class="list-group-item">Repair and Service</li>
+                                    <li class="list-group-item">Remodelling</li>
+                                    <li class="list-group-item">Leak detection and Repair</li>
+                                    <li class="list-group-item">General Service</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                              <h4 class="panel-title">
+                                  <a href="javascript:;">Electrical</a>
+                              </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <ul id="category-list-box" data-id="1" class="list-group checked-list-box">
+                                    <li class="list-group-item">New House Connection</li>
+                                    <li class="list-group-item">Repair and Service</li>
+                                    <li class="list-group-item">Earthing and wiring</li>
+                                    <li class="list-group-item">General Service</li>
+                                    <li class="list-group-item">Electrical Equipment Maintenance</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                              <h4 class="panel-title">
+                                  <a href="javascript:;">Carpentry</a>
+                              </h4>
+                          </div>
+                          <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <ul id="category-list-box" data-id="2" class="list-group checked-list-box">
+                                    <li class="list-group-item">Modular Kitchen</li>
+                                    <li class="list-group-item">Modular Bedrooms</li>
+                                    <li class="list-group-item">Make Furnitures</li>
+                                    <li class="list-group-item">Furniture Maintenance</li>
+                                    <li class="list-group-item">Termite and Pest Conrtrol</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            <button class="btn btn-primary col-xs-12" id="get-checked-data">Proceed</button>
+        </div>
+  </div>
+<div id="create-ticket-modal" style="display:none;" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="text-center">Create a ticket</h1>
+              </div>
+              <div class="modal-body">
+                  <form class="form col-md-12 center-block">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-lg" placeholder="Email" id="user-email">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control input-lg" placeholder="Subject" id="ticket-subject">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control input-lg" placeholder="Email CC" id="cc-emails">
+                      <h6>Please enter email with comma separated.</h6>
+                    </div>
+                    <div class="form-group">
+                      <h4>Priority</h4>
+                      <div class="btn-group" role="group" aria-label="Priority">
+                        <button type="button" class="btn btn-default" data-id="1">Low</button>
+                        <button type="button" class="btn btn-default" data-id="2">Medium</button>
+                        <button type="button" class="btn btn-default" data-id="3">High</button>
+                        <button type="button" class="btn btn-default" data-id="4">Urgent</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary btn-lg btn-block" id="create-ticket-btn" type="button">Create</button>
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <div class="col-md-12">
+                    </div>  
+              </div>
+          </div>
+          </div>
+        </div>
+  
+</div>
+
+
+
+</div>
+	<!-- script references -->
+		<script src="js/lib/jquery.min.2.0.2.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/serviceCategory.js"></script>
+	</body>
+</html>
