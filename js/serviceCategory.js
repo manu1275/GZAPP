@@ -4,6 +4,15 @@ $(function () {
     var siteHeader = {};
     var priority = 1;
     var checkedItems = {}, checkedCategories = [];
+
+    $('#datetimepicker4').datetimepicker({
+      pickDate: false
+    });
+
+    $('#datetimepicker3').datetimepicker({
+      pickTime: false
+    });
+
 $('.list-group.checked-list-box .list-group-item').each(function () {
         
         // Settings
@@ -102,9 +111,12 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
                 "subject":$("#ticket-subject").val(),
                 "email":$("#user-email").val(),
                 "priority":priority,
-                "status":2
+                "status":2,
+                "custom_field":{
+                    "preferred_appointment_date_287145":$("#date-picker").val()+"T"+$("#time-picker").val()+"+05:30"
+                }
             },
-            "cc_emails":$("#cc-emails").val()
+            "cc_emails":""
         };
 
         serviceData = JSON.stringify(serviceData);

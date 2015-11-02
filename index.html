@@ -6,7 +6,9 @@
 		<title>Bootstrap Login Form</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -95,16 +97,28 @@
                       <input type="text" class="form-control input-lg" placeholder="Subject" id="ticket-subject">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control input-lg" placeholder="Email CC" id="cc-emails">
-                      <h6>Please enter email with comma separated.</h6>
+                      <!-- <input type="text" class="form-control input-lg" placeholder="Email CC" id="date-picker"> -->
+                      <div class="well">
+                      <div id="datetimepicker3" class="input-append">
+                        
+                        <input data-format="MM/dd/yyyy" type="text" id="date-picker"></input>
+                        <span class="add-on">
+                          <i class="glyphicon glyphicon-calendar">
+                          </i>
+                        </span>
+                      </div>
+                    </div>
                     </div>
                     <div class="form-group">
-                      <h4>Priority</h4>
-                      <div class="btn-group" role="group" aria-label="Priority">
-                        <button type="button" class="btn btn-default" data-id="1">Low</button>
-                        <button type="button" class="btn btn-default" data-id="2">Medium</button>
-                        <button type="button" class="btn btn-default" data-id="3">High</button>
-                        <button type="button" class="btn btn-default" data-id="4">Urgent</button>
+                      <!-- <input type="text" class="form-control input-lg" placeholder="Email CC" id="time-picker"> -->
+                      <div class="well">
+                        <div id="datetimepicker4" class="input-append">
+                          <input data-format="hh:mm:ss" type="text" id="time-picker"></input>  
+                          <span class="add-on">
+                            <i  class="glyphicon glyphicon-time">
+                            </i>
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <div class="form-group">
@@ -127,7 +141,8 @@
 </div>
 	<!-- script references -->
 		<script src="js/lib/jquery.min.2.0.2.js"></script>
-		<script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="js/serviceCategory.js"></script>
 	</body>
 </html>
